@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Zendos Looking Glass</title>
+<link href="CenturyLink's%20Looking%20Glass_files/bootstrap.css" rel="stylesheet">
+<link href="https://lookingglass.centurylink.com/icons/spyglass.ico" rel="shortcut icon">
+<!-- <script src="CenturyLink's%20Looking%20Glass_files/jquery.js"></script>
+<script src="CenturyLink's%20Looking%20Glass_files/popper.js"></script>
+<script src="CenturyLink's%20Looking%20Glass_files/bootstrap.js"></script> -->
+</head>
+<body>
+<div class="container-fluid">
+<div class="row align-items-center">
+<div class="col-1">
+</div> <!-- col -->
+<div class="col">
+<img src="CenturyLink's%20Looking%20Glass_files/Zendos.png" class="align-items-center" alt="image">
+</div> <!-- col -->
+</div> <!-- row -->
+<div class="row align-items-center">
+<div class="col-1">
+</div> <!-- col -->
+<div class="col">
+<img src="CenturyLink's%20Looking%20Glass_files/worldview.png" class="img-fluid" alt="Responsive image" align="middle">
+</div> <!-- col -->
+</div> <!-- row -->
+<br>
+<br>
+<div class="row align-items-center">
+<div class="col-1">
+</div> <!-- col -->
+<div class="col">
+A Looking Glass is a piece of software running on a web server that allows external users to get a look at routing and network behavior as it originates from the remote network. A looking glass accesses a remote router and performs either a ping, trace, or one of several show commands allowing a view of the IP and BGP route tables.The information is then returned as a web page.<br>
+<br>
+</div> <!-- col -->
+<div class="col-1">
+</div> <!-- col -->
+</div> <!-- row -->
+<div class="row align-items-center">
+<div class="col-2">
+</div> <!-- col -->
+<div class="col-2">
+</div> <!-- col -->
+</div> <!-- row -->
+<br>
+<form method="post" style="margin-bottom:0px;">
+<div class="container-fluid">
+<div class="row">
+<div class="col-12 col-lg-1">
+</div> <!-- col -->
+<div class="col-12 col-lg-3" style="border:1px solid #ff5733;">
+<div class="row align-items-center " style="background-color:#ff5733;">
+<div class="col" align="center">
+Information Category
+</div> <!-- col -->
+</div> <!-- row -->
+<div class="row">
+<div class="col" style="font-size:14px; padding: 15px 15px 15px 15px;">
+<div class="form-check">
+<input class="form-check-input" id="Radio-category" name="category" value="ping" checked="checked" type="radio">
+<label class="form-check-label" for="Radio-category">
+Ping
+</label>
+</div> <!-- form-check-radio -->
+<div class="form-check">
+<input class="form-check-input" id="Radio-category" name="category" value="traceroute" type="radio">
+<label class="form-check-label" for="Radio-category">
+Traceroute
+</label>
+</div> <!-- form-check-radio -->
+<div class="form-check">
+<input class="form-check-input" id="Radio-category" name="category" value="bgp" type="radio">
+<label class="form-check-label" for="Radio-category">
+BGP Route Lookup
+</label>
+</div> <!-- form-check-radio -->
+<br>
+<br>
+<br>
+</div> <!-- col -->
+</div> <!-- row -->
+</div> <!-- col -->
+<div class="col-12 col-lg-3" style="border:1px solid #ff5733;">
+<div class="row align-items-center " style="background-color:#ff5733;">
+<div class="col" align="center">
+Source Site
+</div> <!-- col -->
+</div> <!-- row -->
+<div class="row">
+<div class="col" style="font-size:14px; padding: 15px 15px 15px 15px;">
+<select class="custom-select" name="site_name">
+<optgroup label="Africa">
+<option value="CapeTown-SouthAfrica" selected="selected">CapeTown-SouthAfrica</option>
+</optgroup><optgroup label="Asia">
+<option value="HongKong-China">HongKong-China</option>
+<option value="Singapore">Singapore</option>
+</optgroup><optgroup label="Australia">
+<option value="Sydney">Sydney</option>
+</optgroup><optgroup label="Europe">
+<option value="Amsterdam-Netherlands">Amsterdam-Netherlands</option>
+<option value="Barcelona-Spain">Barcelona-Spain</option>
+<option value="Berlin-Germany">Berlin-Germany</option>
+</optgroup></select>
+</div> <!-- col -->
+</div> <!-- row -->
+</div> <!-- col -->
+<div class="col-12 col-lg-4" style="border:1px solid #ff5733;" align="center">
+<div class="row align-items-center " style="background-color:#ff5733;">
+<div class="col">
+Destination Details
+</div> <!-- col -->
+</div> <!-- row -->
+<div class="row">
+<div class="col" style="padding: 15px 15px 15px 15px;">
+<div class="row align-items-center">
+<div class="col-5 col-sm-4 col-md-4 col-lg-4 col-xl-5" style="font-size:12px;" align="left">
+DNS Name or IP Address
+</div> <!-- col -->
+<div class="col-1">
+</div> <!-- col -->
+<div class="col-12 col-sm-9 col-md-6 col-lg-6 col-xl-6">
+<input class="form-control" placeholder="x.x.x.x | xxxx:xxxx:..." aria-label="ip" name="ip" required="" aria-describedby="basic-addon1" value="8.8.8.8" type="text">
+</div> <!-- col -->
+</div> <!-- row -->
+<div class="row align-items-center">
+<div class="col-5 col-sm-4 col-md-4 col-lg-4 col-xl-5" style="font-size:12px;" align="left">
+Input tracefiles
+</div> <!-- col -->
+<div class="col-1" align="right">
+</div> <!-- col -->
+<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+<br>	
+<div class="col-5 col-sm-4 col-md-4 col-lg-4 col-xl-5" style="font-size:12px;" align="left">
+  <form action="/action_page.php">
+  <input type="file" name="myFile" multiple><br><br>
+  <button type="submit" class="btn  btn-primary btn-sm">Upload</button>
+</form>
+</div> <!-- col -->
+</div> <!-- row -->
+<div class="row align-items-center">
+<div class="col-5 col-sm-4 col-md-4 col-lg-4 col-xl-5" style="font-size:12px;" align="left">
+
+<br>
+<div class="row align-items-center">
+<div class="col-12 col-lg-10">
+</div> <!-- col -->
+<div class="col-12 col-lg-1">
+<button type="submit" class="btn  btn-primary btn-sm">Submit </button>
+</div> <!-- col -->
+<div class="col-12 col-lg-1">
+</div> <!-- col -->
+</div> <!-- row -->
+</form>
+<br>
+<div class="row align-items-center">
+<div class="col-2">
+</div> <!-- col -->
+<div class="col-2">
+</div> <!-- col -->
+</div> <!-- row -->
+<br>
+<br>
+<div class="row align-items-center">
+</div> <!-- row -->
+</div> <!-- cont -->
+
+</body></html>
